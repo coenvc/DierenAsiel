@@ -1,0 +1,58 @@
+<!-- #page>div.logo+ul#navigation>li*5>a{Item $} -->
+<div id="logo"><a href="index.html"><img src="img/shelter_logo.gif" alt="" class="logo"></a></div>
+<div id="AanwezigeDieren">
+<h1 class="mainHeader">Alle Aanwezige dieren</h1>
+<ul id="dierenNav">
+  <li class="dierLink"><a href="#honden">Honden</a></li>
+  <li class="dierLink"><a href="#katten">Katten</a></li>
+</ul>
+<div id ="katten">
+  <h2>Katten</h2>
+  <p id="kattenOmschrijving" class="DierenOmschrijving">U kunt hier een overzicht vinden van alle Katten in ons asiel</p>
+<table id="DierenTable">
+  <thead>
+    <tr>
+      <th>Naam</th><th>Leeftijd</th><th>Reg. Nr.</th><th>Gereserveerd</th>
+      <tr><td><strong>Piet</strong></td><td>8</td><td>003</td><td>Nee</td></tr>
+      <tr><td><strong>Kees</strong></td><td>4</td><td>004</td><td>Ja</td></tr>
+    </tr>
+  </thead>
+</table>
+</div>
+<div id="honden">
+  <h2>Honden</h2>
+  <p id="hondenOmschrijving" class="DierenOmschrijving">U kunt hier een overzicht vinden van alle honden in ons asiel</p>
+<table id="DierenTable">
+  <thead>
+    <tr>
+  <th>Naam</th><th>Leeftijd</th><th>Reg. Nr.</th><th>Gereserveerd</th>
+  <tr><td><strong>Henk</strong></td><td>2</td><td>001</td><td>Ja</td></tr>
+  <tr><td><strong>Jan</strong></td><td>5</td><td>002</td><td>Nee</td></tr>
+    </tr>
+  </thead>
+  <tbody>
+</table>
+</div>
+</div>
+<div id="DierToevoegen">
+<h1>Dier Toevoegen</h1>
+<p id="OmschrijvingDierToevoegen">
+U kunt hier een dier toevoegen aan het asiel
+</p>
+<form>
+  <label for="naam">Naam</label>
+  <input type="text" id="naam" />
+  <br/>
+  <label for="leeftijd">Leeftijd</label>
+  <input type="text" id="leeftijd" />
+  <br />
+  <br/>
+  <label for="leeftijd">Leeftijd</label>
+  <input type="text" id="leeftijd" />
+  <br/>
+  <input type="radio" name="dier" value="hond" checked>Hond<br>
+  <input type="radio" name="dier" value="kat">Kat<br>
+  <br/>
+  <input type="submit" value="Toevoegen" />
+</form>
+</div>
