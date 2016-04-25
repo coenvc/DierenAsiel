@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <title>Dierenasiel | Aanwezige Dieren</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
 </head>
 <header>
 <div id="logo"><a href="index.html"><img src="img/shelter_logo.gif" alt="" class="logo"></a></div>
 </header>
 <body>
 <div id="AanwezigeDieren">
-<h1 class="mainHeader">Alle Aanwezige diere soorten</h1>
+<h1 class="mainHeader">Alle Aanwezige dier soorten</h1>
 <p>U kunt hier een overzicht zien van alle aanwezige dieren in het asiel</p>
 <ul id="dierenNav">
   <li class="dierLink"><a href="#honden">Honden</a></li>
@@ -49,15 +52,27 @@
 <p id="OmschrijvingDierToevoegen">
 U kunt hier een dier toevoegen aan het asiel
 </p>
-<form>
-  <label for="naam">Naam</label>
+<form class="dierForm">
+  <label for="naam" onfocus="">Naam</label>
   <input type="text" id="naam" />
   <br></br>
   <label for="leeftijd">Leeftijd</label>
   <input type="text" id="leeftijd" />
   <br></br>
+  <label for="regnr">Registratie Nummer</label>
+  <input type="text" id="regnr"/>
+  <br></br>
+  <div class="radioDiv">
+  <label for="reserved" onfocus="">Gereserveerd</label>
+  <input type="radio" name="reserved" value="Ja" checked>ja<br>
+  <input type="radio" name="reserved" value="Nee">Nee<br>
+</div>
+  <br></br>
+  <div class="radioDiv">
+  <label for="dier" onfocus="">Diersoort</label>
   <input type="radio" name="dier" value="hond" checked>Hond<br>
   <input type="radio" name="dier" value="kat">Kat<br>
+</div>
   <br></br>
   <input class="button" type="submit" value="Toevoegen" />
 </form>
